@@ -8,3 +8,6 @@
 !/libecl.dll
 !/libecl.py
 !/patrol.py
+
+!/output/
+!/output/**
