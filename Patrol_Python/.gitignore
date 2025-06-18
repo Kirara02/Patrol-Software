@@ -1,0 +1,10 @@
+*
+!/.gitignore
+
+!/ecl/
+!/ecl/**
+!/patrol.c
+
+!/libecl.dll
+!/libecl.py
+!/patrol.py

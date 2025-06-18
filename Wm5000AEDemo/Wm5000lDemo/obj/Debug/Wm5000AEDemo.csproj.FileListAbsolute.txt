@@ -1,0 +1,23 @@
+F:\Wm5000lDemo\Wm5000lDemo\obj\Debug\Interop.WMWEBUSBLib.dll
+F:\Wm5000lDemo\Wm5000lDemo\obj\Debug\Wm5000AEDemo.csproj.ResolveComReference.cache
+F:\Wm5000lDemo\Wm5000lDemo\bin\Debug\Wm5000AEDemo.exe
+F:\Wm5000lDemo\Wm5000lDemo\bin\Debug\Wm5000AEDemo.pdb
+F:\Wm5000lDemo\Wm5000lDemo\bin\Debug\Interop.WMWEBUSBLib.dll
+F:\Wm5000lDemo\Wm5000lDemo\obj\Debug\ResolveAssemblyReference.cache
+F:\Wm5000lDemo\Wm5000lDemo\obj\Debug\Wm5000AEDemo.Properties.Resources.resources
+F:\Wm5000lDemo\Wm5000lDemo\obj\Debug\Wm5000AEDemo.csproj.GenerateResource.Cache
+F:\Wm5000lDemo\Wm5000lDemo\obj\Debug\Wm5000AEDemo.exe
+F:\Wm5000lDemo\Wm5000lDemo\obj\Debug\Wm5000AEDemo.pdb
+F:\Wm5000lDemo\Wm5000lDemo\obj\Debug\Wm5000AEDemo.frmMain.resources
+D:\Patrol Software\5kE\Wm5000AEDemo\Wm5000lDemo\bin\Debug\Wm5000AEDemo.exe
+D:\Patrol Software\5kE\Wm5000AEDemo\Wm5000lDemo\bin\Debug\Wm5000AEDemo.pdb
+D:\Patrol Software\5kE\Wm5000AEDemo\Wm5000lDemo\bin\Debug\Interop.WMWEBUSBLib.dll
+D:\Patrol Software\5kE\Wm5000AEDemo\Wm5000lDemo\obj\Debug\Wm5000AEDemo.csproj.AssemblyReference.cache
+D:\Patrol Software\5kE\Wm5000AEDemo\Wm5000lDemo\obj\Debug\Interop.WMWEBUSBLib.dll
+D:\Patrol Software\5kE\Wm5000AEDemo\Wm5000lDemo\obj\Debug\Wm5000AEDemo.csproj.ResolveComReference.cache
+D:\Patrol Software\5kE\Wm5000AEDemo\Wm5000lDemo\obj\Debug\Wm5000AEDemo.frmMain.resources
+D:\Patrol Software\5kE\Wm5000AEDemo\Wm5000lDemo\obj\Debug\Wm5000AEDemo.Properties.Resources.resources
+D:\Patrol Software\5kE\Wm5000AEDemo\Wm5000lDemo\obj\Debug\Wm5000AEDemo.csproj.GenerateResource.cache
+D:\Patrol Software\5kE\Wm5000AEDemo\Wm5000lDemo\obj\Debug\Wm5000AEDemo.csproj.CoreCompileInputs.cache
+D:\Patrol Software\5kE\Wm5000AEDemo\Wm5000lDemo\obj\Debug\Wm5000AEDemo.exe
+D:\Patrol Software\5kE\Wm5000AEDemo\Wm5000lDemo\obj\Debug\Wm5000AEDemo.pdb

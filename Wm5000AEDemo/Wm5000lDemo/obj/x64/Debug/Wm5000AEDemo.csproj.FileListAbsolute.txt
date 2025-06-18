@@ -1,0 +1,15 @@
+D:\Patrol Software\5kE\Wm5000AEDemo\Wm5000lDemo\obj\x64\Debug\Wm5000AEDemo.csproj.AssemblyReference.cache
+D:\Patrol Software\5kE\Wm5000AEDemo\Wm5000lDemo\bin\x64\Debug\Wm5000AEDemo.exe
+D:\Patrol Software\5kE\Wm5000AEDemo\Wm5000lDemo\bin\x64\Debug\Wm5000AEDemo.pdb
+D:\Patrol Software\5kE\Wm5000AEDemo\Wm5000lDemo\bin\x64\Debug\Wm5000AEDemo.exe.CodeAnalysisLog.xml
+D:\Patrol Software\5kE\Wm5000AEDemo\Wm5000lDemo\bin\x64\Debug\Wm5000AEDemo.exe.lastcodeanalysissucceeded
+D:\Patrol Software\5kE\Wm5000AEDemo\Wm5000lDemo\obj\x64\Debug\Interop.WMWEBUSBLib.dll
+D:\Patrol Software\5kE\Wm5000AEDemo\Wm5000lDemo\obj\x64\Debug\Wm5000AEDemo.csproj.ResolveComReference.cache
+D:\Patrol Software\5kE\Wm5000AEDemo\Wm5000lDemo\obj\x64\Debug\Wm5000AEDemo.frmMain.resources
+D:\Patrol Software\5kE\Wm5000AEDemo\Wm5000lDemo\obj\x64\Debug\Wm5000AEDemo.Properties.Resources.resources
+D:\Patrol Software\5kE\Wm5000AEDemo\Wm5000lDemo\obj\x64\Debug\Wm5000AEDemo.csproj.GenerateResource.cache
+D:\Patrol Software\5kE\Wm5000AEDemo\Wm5000lDemo\obj\x64\Debug\Wm5000AEDemo.csproj.CoreCompileInputs.cache
+D:\Patrol Software\5kE\Wm5000AEDemo\Wm5000lDemo\obj\x64\Debug\Wm5000AEDemo.exe
+D:\Patrol Software\5kE\Wm5000AEDemo\Wm5000lDemo\obj\x64\Debug\Wm5000AEDemo.pdb
+D:\Patrol Software\5kE\Wm5000AEDemo\Wm5000lDemo\bin\x64\Debug\Wm5000AEDemo.exe.config
+D:\Patrol Software\5kE\Wm5000AEDemo\Wm5000lDemo\obj\x64\Debug\Wm5000AEDemo.exe.config

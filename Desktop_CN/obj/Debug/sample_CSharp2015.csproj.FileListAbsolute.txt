@@ -1,0 +1,95 @@
+E:\戴玉国工作文件\中研巡更二次开发接口指南\Device access API\C#\sample_CSharp2015\bin\Debug\sample_CSharp2008.exe
+E:\戴玉国工作文件\中研巡更二次开发接口指南\Device access API\C#\sample_CSharp2015\bin\Debug\sample_CSharp2008.pdb
+E:\戴玉国工作文件\中研巡更二次开发接口指南\Device access API\C#\sample_CSharp2015\obj\Debug\sample_CSharp2008.Form1.resources
+E:\戴玉国工作文件\中研巡更二次开发接口指南\Device access API\C#\sample_CSharp2015\obj\Debug\sample_CSharp2008.Form3.resources
+E:\戴玉国工作文件\中研巡更二次开发接口指南\Device access API\C#\sample_CSharp2015\obj\Debug\sample_CSharp2008.Properties.Resources.resources
+E:\戴玉国工作文件\中研巡更二次开发接口指南\Device access API\C#\sample_CSharp2015\obj\Debug\sample_CSharp2015.csproj.GenerateResource.Cache
+E:\戴玉国工作文件\中研巡更二次开发接口指南\Device access API\C#\sample_CSharp2015\obj\Debug\sample_CSharp2008.exe
+E:\戴玉国工作文件\中研巡更二次开发接口指南\Device access API\C#\sample_CSharp2015\obj\Debug\sample_CSharp2008.pdb
+E:\戴玉国工作文件\中研巡更二次开发接口指南\Device access API\C#\sample_CSharp2015\obj\Debug\sample_CSharp2008.DFileForm.resources
+E:\戴玉国工作文件\中研巡更二次开发接口指南\Device access API\C#\sample_CSharp2015\obj\Debug\sample_CSharp2008.EventPatrolForm.resources
+E:\戴玉国工作文件\中研巡更二次开发接口指南\Device access API\C#\sample_CSharp2015\obj\Debug\sample_CSharp2008.FingerprintForm.resources
+E:\戴玉国工作文件\中研巡更二次开发接口指南\Device access API\C#\sample_CSharp2015\obj\Debug\sample_CSharp2008.ItemPatrolForm.resources
+E:\戴玉国工作文件\中研巡更二次开发接口指南\Device access API\C#\sample_CSharp2015\obj\Debug\sample_CSharp2008.NoDriverStickForm.resources
+E:\戴玉国工作文件\中研巡更二次开发接口指南\Device access API\C#\sample_CSharp2015\obj\Debug\sample_CSharp2008.PatrolForm.resources
+E:\戴玉国工作文件\中研巡更二次开发接口指南\Device access API\C#\sample_CSharp2015\obj\Debug\sample_CSharp2015.csprojResolveAssemblyReference.cache
+C:\Users\zxq\Desktop\sample_CSharp2015\obj\Debug\sample_CSharp2008.exe
+C:\Users\zxq\Desktop\sample_CSharp2015\obj\Debug\sample_CSharp2008.pdb
+C:\Users\zxq\Desktop\sample_CSharp2015\obj\Debug\sample_CSharp2015.csprojResolveAssemblyReference.cache
+C:\Users\zxq\Desktop\sample_CSharp2015\obj\Debug\sample_CSharp2008.DFileForm.resources
+C:\Users\zxq\Desktop\sample_CSharp2015\obj\Debug\sample_CSharp2008.EventPatrolForm.resources
+C:\Users\zxq\Desktop\sample_CSharp2015\obj\Debug\sample_CSharp2008.FingerprintForm.resources
+C:\Users\zxq\Desktop\sample_CSharp2015\obj\Debug\sample_CSharp2008.Form1.resources
+C:\Users\zxq\Desktop\sample_CSharp2015\obj\Debug\sample_CSharp2008.Form3.resources
+C:\Users\zxq\Desktop\sample_CSharp2015\obj\Debug\sample_CSharp2008.ItemPatrolForm.resources
+C:\Users\zxq\Desktop\sample_CSharp2015\obj\Debug\sample_CSharp2008.NoDriverStickForm.resources
+C:\Users\zxq\Desktop\sample_CSharp2015\obj\Debug\sample_CSharp2008.PatrolForm.resources
+C:\Users\zxq\Desktop\sample_CSharp2015\obj\Debug\sample_CSharp2008.Properties.Resources.resources
+C:\Users\zxq\Desktop\sample_CSharp2015\obj\Debug\sample_CSharp2015.csproj.GenerateResource.Cache
+E:\中研\中研巡更二次开发接口指南\sample_CSharp2015\obj\Debug\sample_CSharp2015.csprojAssemblyReference.cache
+E:\中研\中研巡更二次开发接口指南\sample_CSharp2015\obj\Debug\sample_CSharp2008.DFileForm.resources
+E:\中研\中研巡更二次开发接口指南\sample_CSharp2015\obj\Debug\sample_CSharp2008.EventPatrolForm.resources
+E:\中研\中研巡更二次开发接口指南\sample_CSharp2015\obj\Debug\sample_CSharp2008.FingerprintForm.resources
+E:\中研\中研巡更二次开发接口指南\sample_CSharp2015\obj\Debug\sample_CSharp2008.Form1.resources
+E:\中研\中研巡更二次开发接口指南\sample_CSharp2015\obj\Debug\sample_CSharp2008.Form3.resources
+E:\中研\中研巡更二次开发接口指南\sample_CSharp2015\obj\Debug\sample_CSharp2008.ItemPatrolForm.resources
+E:\中研\中研巡更二次开发接口指南\sample_CSharp2015\obj\Debug\sample_CSharp2008.NoDriverStickForm.resources
+E:\中研\中研巡更二次开发接口指南\sample_CSharp2015\obj\Debug\sample_CSharp2008.PatrolForm.resources
+E:\中研\中研巡更二次开发接口指南\sample_CSharp2015\obj\Debug\sample_CSharp2008.Properties.Resources.resources
+E:\中研\中研巡更二次开发接口指南\sample_CSharp2015\obj\Debug\sample_CSharp2015.csproj.GenerateResource.cache
+E:\中研\中研巡更二次开发接口指南\sample_CSharp2015\obj\Debug\sample_CSharp2015.csproj.CoreCompileInputs.cache
+E:\中研\中研巡更二次开发接口指南\sample_CSharp2015\obj\Debug\sample_CSharp2008.exe
+E:\中研\中研巡更二次开发接口指南\sample_CSharp2015\obj\Debug\sample_CSharp2008.pdb
+E:\中研\中研巡更二次开发接口指南\sample_CSharp2015\bin\Debug\sample_CSharp2008.exe
+E:\中研\中研巡更二次开发接口指南\sample_CSharp2015\bin\Debug\sample_CSharp2008.pdb
+C:\Users\zxq\Desktop\上海SDK\c#\sample_CSharp2015\bin\Debug\sample_CSharp2008.exe
+C:\Users\zxq\Desktop\上海SDK\c#\sample_CSharp2015\bin\Debug\sample_CSharp2008.pdb
+C:\Users\zxq\Desktop\上海SDK\c#\sample_CSharp2015\obj\Debug\sample_CSharp2015.csprojAssemblyReference.cache
+C:\Users\zxq\Desktop\上海SDK\c#\sample_CSharp2015\obj\Debug\sample_CSharp2008.EventPatrolForm.resources
+C:\Users\zxq\Desktop\上海SDK\c#\sample_CSharp2015\obj\Debug\sample_CSharp2008.Properties.Resources.resources
+C:\Users\zxq\Desktop\上海SDK\c#\sample_CSharp2015\obj\Debug\sample_CSharp2015.csproj.GenerateResource.cache
+C:\Users\zxq\Desktop\上海SDK\c#\sample_CSharp2015\obj\Debug\sample_CSharp2015.csproj.CoreCompileInputs.cache
+C:\Users\zxq\Desktop\上海SDK\c#\sample_CSharp2015\obj\Debug\sample_CSharp2008.exe
+C:\Users\zxq\Desktop\上海SDK\c#\sample_CSharp2015\obj\Debug\sample_CSharp2008.pdb
+C:\Users\zxq\Desktop\GS6100S_SDK_for_Patrol_Device_with_WiFi\c#\Device access SDK c#2015\simple\bin\Debug\sample_CSharp2008.exe
+C:\Users\zxq\Desktop\GS6100S_SDK_for_Patrol_Device_with_WiFi\c#\Device access SDK c#2015\simple\bin\Debug\sample_CSharp2008.pdb
+C:\Users\zxq\Desktop\GS6100S_SDK_for_Patrol_Device_with_WiFi\c#\Device access SDK c#2015\simple\obj\Debug\sample_CSharp2015.csprojAssemblyReference.cache
+C:\Users\zxq\Desktop\GS6100S_SDK_for_Patrol_Device_with_WiFi\c#\Device access SDK c#2015\simple\obj\Debug\sample_CSharp2008.EventPatrolForm.resources
+C:\Users\zxq\Desktop\GS6100S_SDK_for_Patrol_Device_with_WiFi\c#\Device access SDK c#2015\simple\obj\Debug\sample_CSharp2008.Properties.Resources.resources
+C:\Users\zxq\Desktop\GS6100S_SDK_for_Patrol_Device_with_WiFi\c#\Device access SDK c#2015\simple\obj\Debug\sample_CSharp2015.csproj.GenerateResource.cache
+C:\Users\zxq\Desktop\GS6100S_SDK_for_Patrol_Device_with_WiFi\c#\Device access SDK c#2015\simple\obj\Debug\sample_CSharp2015.csproj.CoreCompileInputs.cache
+C:\Users\zxq\Desktop\GS6100S_SDK_for_Patrol_Device_with_WiFi\c#\Device access SDK c#2015\simple\obj\Debug\sample_CSharp2008.exe
+C:\Users\zxq\Desktop\GS6100S_SDK_for_Patrol_Device_with_WiFi\c#\Device access SDK c#2015\simple\obj\Debug\sample_CSharp2008.pdb
+D:\通讯协议\Device access SDK c#2015 supports 6100 Series\Device access SDK c#2015\simple\obj\Debug\sample_CSharp2008.exe
+D:\通讯协议\Device access SDK c#2015 supports 6100 Series\Device access SDK c#2015\simple\obj\Debug\sample_CSharp2008.pdb
+D:\通讯协议\Device access SDK c#2015 supports 6100 Series\Device access SDK c#2015\simple\bin\Debug\sample_CSharp2008.exe
+D:\通讯协议\Device access SDK c#2015 supports 6100 Series\Device access SDK c#2015\simple\bin\Debug\sample_CSharp2008.pdb
+D:\通讯协议\Device access SDK c#2015 supports 6100 Series\Device access SDK c#2015\simple\obj\Debug\sample_CSharp2015.csprojResolveAssemblyReference.cache
+D:\通讯协议\Device access SDK c#2015 supports 6100 Series\Device access SDK c#2015\simple\obj\Debug\sample_CSharp2008.EventPatrolForm.resources
+D:\通讯协议\Device access SDK c#2015 supports 6100 Series\Device access SDK c#2015\simple\obj\Debug\sample_CSharp2008.Properties.Resources.resources
+D:\通讯协议\Device access SDK c#2015 supports 6100 Series\Device access SDK c#2015\simple\obj\Debug\sample_CSharp2015.csproj.GenerateResource.Cache
+C:\Users\fahtu\OneDrive\Documents\Patrol Software\Device access SDK c#2015 support 6100UL\simple\bin\Debug\sample_CSharp2008.exe
+C:\Users\fahtu\OneDrive\Documents\Patrol Software\Device access SDK c#2015 support 6100UL\simple\bin\Debug\sample_CSharp2008.pdb
+C:\Users\fahtu\OneDrive\Documents\Patrol Software\Device access SDK c#2015 support 6100UL\simple\bin\Debug\mscorlib.dll
+C:\Users\fahtu\OneDrive\Documents\Patrol Software\Device access SDK c#2015 support 6100UL\simple\bin\Debug\JA\mscorlib.resources.dll
+C:\Users\fahtu\OneDrive\Documents\Patrol Software\Device access SDK c#2015 support 6100UL\simple\bin\Debug\sortkey.nlp
+C:\Users\fahtu\OneDrive\Documents\Patrol Software\Device access SDK c#2015 support 6100UL\simple\bin\Debug\sorttbls.nlp
+C:\Users\fahtu\OneDrive\Documents\Patrol Software\Device access SDK c#2015 support 6100UL\simple\bin\Debug\big5.nlp
+C:\Users\fahtu\OneDrive\Documents\Patrol Software\Device access SDK c#2015 support 6100UL\simple\bin\Debug\bopomofo.nlp
+C:\Users\fahtu\OneDrive\Documents\Patrol Software\Device access SDK c#2015 support 6100UL\simple\bin\Debug\ksc.nlp
+C:\Users\fahtu\OneDrive\Documents\Patrol Software\Device access SDK c#2015 support 6100UL\simple\bin\Debug\prc.nlp
+C:\Users\fahtu\OneDrive\Documents\Patrol Software\Device access SDK c#2015 support 6100UL\simple\bin\Debug\prcp.nlp
+C:\Users\fahtu\OneDrive\Documents\Patrol Software\Device access SDK c#2015 support 6100UL\simple\bin\Debug\xjis.nlp
+C:\Users\fahtu\OneDrive\Documents\Patrol Software\Device access SDK c#2015 support 6100UL\simple\bin\Debug\normidna.nlp
+C:\Users\fahtu\OneDrive\Documents\Patrol Software\Device access SDK c#2015 support 6100UL\simple\bin\Debug\normnfc.nlp
+C:\Users\fahtu\OneDrive\Documents\Patrol Software\Device access SDK c#2015 support 6100UL\simple\bin\Debug\normnfd.nlp
+C:\Users\fahtu\OneDrive\Documents\Patrol Software\Device access SDK c#2015 support 6100UL\simple\bin\Debug\normnfkc.nlp
+C:\Users\fahtu\OneDrive\Documents\Patrol Software\Device access SDK c#2015 support 6100UL\simple\bin\Debug\normnfkd.nlp
+C:\Users\fahtu\OneDrive\Documents\Patrol Software\Device access SDK c#2015 support 6100UL\simple\obj\Debug\sample_CSharp2015.csproj.AssemblyReference.cache
+C:\Users\fahtu\OneDrive\Documents\Patrol Software\Device access SDK c#2015 support 6100UL\simple\obj\Debug\sample_CSharp2008.EventPatrolForm.resources
+C:\Users\fahtu\OneDrive\Documents\Patrol Software\Device access SDK c#2015 support 6100UL\simple\obj\Debug\sample_CSharp2008.Properties.Resources.resources
+C:\Users\fahtu\OneDrive\Documents\Patrol Software\Device access SDK c#2015 support 6100UL\simple\obj\Debug\sample_CSharp2015.csproj.GenerateResource.cache
+C:\Users\fahtu\OneDrive\Documents\Patrol Software\Device access SDK c#2015 support 6100UL\simple\obj\Debug\sample_CSharp2015.csproj.CoreCompileInputs.cache
+C:\Users\fahtu\OneDrive\Documents\Patrol Software\Device access SDK c#2015 support 6100UL\simple\obj\Debug\sample_C.2CD13FBB.Up2Date
+C:\Users\fahtu\OneDrive\Documents\Patrol Software\Device access SDK c#2015 support 6100UL\simple\obj\Debug\sample_CSharp2008.exe
+C:\Users\fahtu\OneDrive\Documents\Patrol Software\Device access SDK c#2015 support 6100UL\simple\obj\Debug\sample_CSharp2008.pdb

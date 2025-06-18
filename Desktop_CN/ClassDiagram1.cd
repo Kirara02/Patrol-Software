@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="sample_CSharp2008.DeviceSelect" Collapsed="true">
+    <Position X="9.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAMQ7AAAAgHAPAAAAAAA=</HashCode>
+      <FileName>DeviceSelect.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="sample_CSharp2008.Form1" Collapsed="true">
+    <Position X="15" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wQACAAAADCAAAAAAAICAABBCAACAAAgAIEAKAAABCAo=</HashCode>
+      <FileName>Form1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="sample_CSharp2008.Form2" Collapsed="true">
+    <Position X="9.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAABACAAAAAAAACAAAACAMw7AAAAwHAPAAAAQAA=</HashCode>
+      <FileName>Form2.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="sample_CSharp2008.FormCOMStick" Collapsed="true">
+    <Position X="11.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>MAAAAAQQACAgCBBQAQCAAAACABA4AAAAAGAAIAAAAAA=</HashCode>
+      <FileName>FormCOMStick.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="sample_CSharp2008.FormEventPatrol" Collapsed="true">
+    <Position X="13.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>MgQAAAQAACEgCBBQAQCABAACANq5BwAAAHAOoABAAAA=</HashCode>
+      <FileName>FormEventPatrol.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="sample_CSharp2008.FormGpsEventPatrol" Collapsed="true">
+    <Position X="15" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>MAQAAAQAACAgCBBQAQCAAAACANi5BwAAQGAOoAAAAAA=</HashCode>
+      <FileName>FormGpsEventPatrol.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="sample_CSharp2008.FormUSBStick" Collapsed="true">
+    <Position X="9.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>MAQAAAQQACAgCBBQAQCAAAACABg4AAAAAGAAIAAAAAA=</HashCode>
+      <FileName>FormUSBStick.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="sample_CSharp2008.Program" Collapsed="true">
+    <Position X="11.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DFile" Collapsed="true">
+    <Position X="11.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAAAgAiAAAQQAAAAAAAEACAAAAAAAAIQ=</HashCode>
+      <FileName>DFile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EventPatrol" Collapsed="true">
+    <Position X="7.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAQAEBEAAAIAAAABBKEGAAACAAIKAACCAAAAIAQAIBA=</HashCode>
+      <FileName>EventPatrol.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fingerprint" Collapsed="true">
+    <Position X="13.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAIgAAAAAACAAAIAAAAACAAAAAAAAAQAAAAEAA=</HashCode>
+      <FileName>Fingerprint.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CItemPatrol" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IgAQUAECAAIAIAADVCECAARAAAAABACAAAIAIAQAYBA=</HashCode>
+      <FileName>ItemPatrol.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CNoDriverStick" Collapsed="true">
+    <Position X="5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAIAAgAAAAAAAAAAAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>NoDriverStick.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Patrol" Collapsed="true">
+    <Position X="3.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEEAABADIAAgA0EgAAECAkAgQBAgkEAwY8DBAAiKAkA=</HashCode>
+      <FileName>Patrol.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ZVDeviceDLL" Collapsed="true">
+    <Position X="9.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAACgAAAAAAAAAAAQAAAAAAABABAAAAAAQAAQAAAAAA=</HashCode>
+      <FileName>ZVDeviceDLL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PCPS.PatrolDebug" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PatrolDebug.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="sample_CSharp2008.Properties.Resources" Collapsed="true">
+    <Position X="13.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="sample_CSharp2008.Properties.Settings" Collapsed="true">
+    <Position X="15" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>
