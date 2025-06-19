@@ -161,20 +161,19 @@ namespace Wm5000AEDemo
                 string rawData = wmport.GetRecords();
                 string[] lines = rawData.Split(new[] { '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries);
 
-                string logPath = @"C:\Patrol_Log\Logs";
+                string logPath = Environment.GetEnvironmentVariable("LOG_PATH") ?? @"C:\Patrol_Log\Logs";
 
-                if (!System.IO.Directory.Exists(logPath))
+                if (!Directory.Exists(logPath))
                 {
-                    System.IO.Directory.CreateDirectory(logPath);
+                    Directory.CreateDirectory(logPath);
                 }
                 else
                 {
-                    string[] existingFiles = System.IO.Directory.GetFiles(logPath);
-                    foreach (string file in existingFiles)
+                    foreach (string file in Directory.GetFiles(logPath))
                     {
                         try
                         {
-                            System.IO.File.Delete(file);
+                            File.Delete(file);
                         }
                         catch (Exception ex)
                         {
@@ -183,11 +182,11 @@ namespace Wm5000AEDemo
                     }
                 }
 
-                string filePath = System.IO.Path.Combine(logPath, $"patrol_log_{DateTime.Now:yyyy-MM-dd_HH-mm-ss}.txt");
+                string filePath = Path.Combine(logPath, $"patrol_log_{DateTime.Now:yyyy-MM-dd_HH-mm-ss}.txt");
 
                 try
                 {
-                    using (System.IO.StreamWriter writer = new System.IO.StreamWriter(filePath, true))
+                    using (StreamWriter writer = new StreamWriter(filePath, true))
                     {
                         foreach (var line in lines)
                         {
@@ -195,24 +194,24 @@ namespace Wm5000AEDemo
                             if (parts.Length == 3)
                             {
                                 string cardId = parts[0];
-
                                 string tagRaw = parts[1];
                                 string trimmed = tagRaw.TrimStart('0');
                                 string tag = trimmed.Length > 10
-                                    ? trimmed.Substring(trimmed.Length - 10)
-                                    : trimmed.PadLeft(10, '0');
+                                   ? trimmed.Substring(trimmed.Length - 10)
+                                   : trimmed.PadLeft(10, '0');
 
                                 string datetime = parts[2];
                                 string date = datetime.Substring(0, 4) + "/" + datetime.Substring(4, 2) + "/" + datetime.Substring(6, 2);
                                 string time = datetime.Substring(8, 2) + ":" + datetime.Substring(10, 2) + ":" + datetime.Substring(12, 2);
 
-                                string logLine = $"1,1,{tag},{date},{time},{cardId}";
-                                writer.WriteLine(logLine);
+                                writer.WriteLine($"1,1,{tag},{date},{time},{cardId}");
                             }
                         }
                     }
 
                     MessageBox.Show("Formatted records saved to file:\n" + filePath, "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    wmport.ErasureRecords();
                     textBox1.Text = "Data saved";
                 }
                 catch (Exception ex)
@@ -225,8 +224,6 @@ namespace Wm5000AEDemo
                 MessageBox.Show("Please open usb");
             }
         }
-
-
 
     }
 }

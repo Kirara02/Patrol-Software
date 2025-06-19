@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
+using dotenv.net;
 
 namespace Wm5000AEDemo
 {
@@ -13,6 +14,8 @@ namespace Wm5000AEDemo
         [STAThread]
         static void Main()
         {
+            DotEnv.Load();
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new frmMain());
