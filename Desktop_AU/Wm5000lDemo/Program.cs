@@ -18,7 +18,9 @@ namespace Wm5000AEDemo
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmMain());
+            Application.Run(new SyncForm());
+            //Application.Run(new frmMain());
+
         }
     }
 }

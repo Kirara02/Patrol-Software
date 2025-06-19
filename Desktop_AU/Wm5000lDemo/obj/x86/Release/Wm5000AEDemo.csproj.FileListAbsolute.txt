@@ -22,3 +22,4 @@ C:\Patrol-Software\Desktop_AU\Wm5000lDemo\bin\x86\Release\System.Numerics.Vector
 C:\Patrol-Software\Desktop_AU\Wm5000lDemo\bin\x86\Release\System.Runtime.CompilerServices.Unsafe.xml
 C:\Patrol-Software\Desktop_AU\Wm5000lDemo\obj\x86\Release\Wm5000AE.DFFC06E3.Up2Date
 C:\Patrol-Software\Desktop_AU\Wm5000lDemo\bin\x86\Release\.env
+C:\Patrol-Software\Desktop_AU\Wm5000lDemo\obj\x86\Release\Wm5000AEDemo.SyncForm.resources

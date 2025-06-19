@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.btnOpen = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
@@ -40,6 +39,7 @@
             this.textse = new System.Windows.Forms.TextBox();
             this.textge = new System.Windows.Forms.TextBox();
             this.btnSave = new System.Windows.Forms.Button();
+            this.listMessage = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // btnOpen
@@ -51,17 +51,6 @@
             this.btnOpen.Text = "Open Usb";
             this.btnOpen.UseVisualStyleBackColor = true;
             this.btnOpen.Click += new System.EventHandler(this.btnOpen_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(12, 146);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(378, 248);
-            this.textBox1.TabIndex = 9;
             // 
             // button9
             // 
@@ -148,11 +137,20 @@
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
+            // listMessage
+            // 
+            this.listMessage.FormattingEnabled = true;
+            this.listMessage.Location = new System.Drawing.Point(13, 157);
+            this.listMessage.Name = "listMessage";
+            this.listMessage.Size = new System.Drawing.Size(377, 238);
+            this.listMessage.TabIndex = 25;
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(402, 407);
+            this.Controls.Add(this.listMessage);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.textge);
             this.Controls.Add(this.textse);
@@ -162,7 +160,6 @@
             this.Controls.Add(this.button13);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.button9);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btnOpen);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmMain";
@@ -177,7 +174,6 @@
         #endregion
 
         private System.Windows.Forms.Button btnOpen;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button13;
@@ -187,6 +183,7 @@
         private System.Windows.Forms.TextBox textse;
         private System.Windows.Forms.TextBox textge;
         private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.ListBox listMessage;
     }
 }
 

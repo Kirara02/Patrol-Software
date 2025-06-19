@@ -14,6 +14,10 @@ namespace Wm5000AEDemo
     {
         private WMWEBUSBLib.Wwusb wmport;
         private long opened=-1;
+
+        private Timer usbCheckTimer;
+        private int loopInterval = 5000;
+
         public frmMain()
         {
             InitializeComponent();
@@ -75,15 +79,11 @@ namespace Wm5000AEDemo
                 MessageBox.Show("Please open usb");
         }
 
-
-
-
-
         private void button8_Click(object sender, EventArgs e)
         {
             if (opened >= 0)
             {
-                textBox1.Text = wmport.GetSitus();
+                listMessage.Items.Add(wmport.GetSitus());
             }
             else
                 MessageBox.Show("Please open usb");
@@ -93,11 +93,48 @@ namespace Wm5000AEDemo
         {
             if (opened >= 0)
             {
-                textBox1.Text = wmport.GetRecords();
+                listMessage.Items.Clear();
+
+                string rawData = wmport.GetRecords();
+                string[] lines = rawData.Split(new[] { '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries);
+
+                string dataType = Environment.GetEnvironmentVariable("DATA_TYPE") ?? "1";
+                string recorderType = Environment.GetEnvironmentVariable("RECORDER_TYPE") ?? "5";
+
+                foreach (var line in lines)
+                {
+                    string[] parts = line.Split(',');
+                    if (parts.Length == 3)
+                    {
+                        string deviceId = parts[0];
+                        string tagRaw = parts[1];
+                        string trimmed = tagRaw.TrimStart('0');
+                        string tag = trimmed.Length > 10
+                           ? trimmed.Substring(trimmed.Length - 10)
+                           : trimmed.PadLeft(10, '0');
+
+                        ulong tagDecimal = Convert.ToUInt64(tag, 16);
+
+                        string datetime = parts[2];
+                        string date = datetime.Substring(6, 2) + "/" + datetime.Substring(4, 2) + "/" + datetime.Substring(0, 4);
+                        string time = datetime.Substring(8, 2) + ":" + datetime.Substring(10, 2) + ":" + datetime.Substring(12, 2);
+
+                        string formattedLine = $"{dataType},{recorderType},{tagDecimal},{date},{time},{deviceId}";
+                        listMessage.Items.Add(formattedLine);
+                    }
+                }
+
+                if (lines.Length == 0)
+                {
+                    listMessage.Items.Add("No records found.");
+                }
             }
             else
+            {
                 MessageBox.Show("Please open usb");
+            }
         }
+
 
         private void button10_Click(object sender, EventArgs e)
         {
@@ -149,6 +186,7 @@ namespace Wm5000AEDemo
             {
                 // if  wmport.GetTermno() return Value is "" or Value to Number < 0 then fail
                 textge.Text = wmport.GetTermno();
+
             }
             else
                 MessageBox.Show("Please open usb");
@@ -156,33 +194,48 @@ namespace Wm5000AEDemo
 
         private void btnSave_Click(object sender, EventArgs e)
         {
+            listMessage.Items.Clear(); // Kosongkan list sebelum mulai log baru
+
             if (opened >= 0)
             {
+                listMessage.Items.Add("USB connection is open.");
                 string rawData = wmport.GetRecords();
                 string[] lines = rawData.Split(new[] { '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries);
+                listMessage.Items.Add($"Retrieved {lines.Length} record(s) from device.");
 
                 string logPath = Environment.GetEnvironmentVariable("LOG_PATH") ?? @"C:\Patrol_Log\Logs";
+                listMessage.Items.Add($"Log path set to: {logPath}");
+
+                string dataType = Environment.GetEnvironmentVariable("DATA_TYPE") ?? "1";
+                string recorderType = Environment.GetEnvironmentVariable("RECORDER_TYPE") ?? "5";
 
                 if (!Directory.Exists(logPath))
                 {
                     Directory.CreateDirectory(logPath);
+                    listMessage.Items.Add("Log directory not found, created new directory.");
                 }
                 else
                 {
-                    foreach (string file in Directory.GetFiles(logPath))
+                    string[] existingFiles = Directory.GetFiles(logPath);
+                    listMessage.Items.Add($"Found {existingFiles.Length} existing file(s) to delete.");
+                    foreach (string file in existingFiles)
                     {
                         try
                         {
                             File.Delete(file);
+                            listMessage.Items.Add($"Deleted file: {Path.GetFileName(file)}");
                         }
                         catch (Exception ex)
                         {
-                            MessageBox.Show($"Failed to delete existing file:\n{file}\nError: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            string err = $"Failed to delete file: {file}\nError: {ex.Message}";
+                            listMessage.Items.Add(err);
+                            MessageBox.Show(err, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                     }
                 }
 
                 string filePath = Path.Combine(logPath, $"patrol_log_{DateTime.Now:yyyy-MM-dd_HH-mm-ss}.txt");
+                listMessage.Items.Add($"Log file will be saved to: {filePath}");
 
                 try
                 {
@@ -193,37 +246,49 @@ namespace Wm5000AEDemo
                             string[] parts = line.Split(',');
                             if (parts.Length == 3)
                             {
-                                string cardId = parts[0];
+                                string deviceId = parts[0];
                                 string tagRaw = parts[1];
                                 string trimmed = tagRaw.TrimStart('0');
                                 string tag = trimmed.Length > 10
-                                   ? trimmed.Substring(trimmed.Length - 10)
-                                   : trimmed.PadLeft(10, '0');
+                                    ? trimmed.Substring(trimmed.Length - 10)
+                                    : trimmed.PadLeft(10, '0');
+
+                                ulong tagDecimal = Convert.ToUInt64(tag, 16);
 
                                 string datetime = parts[2];
-                                string date = datetime.Substring(0, 4) + "/" + datetime.Substring(4, 2) + "/" + datetime.Substring(6, 2);
+                                string date = datetime.Substring(6, 2) + "/" + datetime.Substring(4, 2) + "/" + datetime.Substring(0, 4);
                                 string time = datetime.Substring(8, 2) + ":" + datetime.Substring(10, 2) + ":" + datetime.Substring(12, 2);
 
-                                writer.WriteLine($"1,1,{tag},{date},{time},{cardId}");
+                                string logLine = $"{dataType},{recorderType},{tagDecimal},{date},{time},{deviceId}";
+                                writer.WriteLine(logLine);
+                                listMessage.Items.Add($"Logged: {logLine}");
+                            }
+                            else
+                            {
+                                listMessage.Items.Add($"Skipped invalid line: {line}");
                             }
                         }
                     }
 
+                    listMessage.Items.Add("All records saved successfully.");
                     MessageBox.Show("Formatted records saved to file:\n" + filePath, "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     wmport.ErasureRecords();
-                    textBox1.Text = "Data saved";
+                    listMessage.Items.Add("Device records erased after saving.");
+                    listMessage.Items.Add($"Data saved to: {filePath}");
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Error writing file:\n" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    string errMsg = "Error writing file:\n" + ex.Message;
+                    listMessage.Items.Add(errMsg);
+                    MessageBox.Show(errMsg, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             else
             {
+                listMessage.Items.Add("USB is not open. Please open USB connection first.");
                 MessageBox.Show("Please open usb");
             }
         }
-
     }
 }

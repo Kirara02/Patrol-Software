@@ -47,3 +47,4 @@ C:\Patrol-Software\Desktop_AU\Wm5000lDemo\obj\x86\Debug\Wm5000AEDemo.csproj.Core
 C:\Patrol-Software\Desktop_AU\Wm5000lDemo\obj\x86\Debug\Wm5000AE.DFFC06E3.Up2Date
 C:\Patrol-Software\Desktop_AU\Wm5000lDemo\obj\x86\Debug\Wm5000AEDemo.exe
 C:\Patrol-Software\Desktop_AU\Wm5000lDemo\obj\x86\Debug\Wm5000AEDemo.pdb
+C:\Patrol-Software\Desktop_AU\Wm5000lDemo\obj\x86\Debug\Wm5000AEDemo.SyncForm.resources
