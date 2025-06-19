@@ -58,7 +58,7 @@ async def encrypt_file(input_path):
 
     filename = os.path.basename(input_path)
     filename_wo_ext = os.path.splitext(filename)[0]
-    output_path = os.path.join(IMPORT_DIR, filename_wo_ext + ".import")
+    output_path = os.path.join(IMPORT_DIR, filename_wo_ext + ".IMPORT")
 
     with open(input_path, "rb") as file_in, open(output_path, "wb") as file_out:
         ret = await ECLStream.write(
