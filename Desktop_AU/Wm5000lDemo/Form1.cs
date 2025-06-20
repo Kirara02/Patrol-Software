@@ -33,6 +33,7 @@ namespace Wm5000AEDemo
             ShowState(opened = wmport.OpenUsb(2050));
         }
         private void ShowState(long result) {
+            MessageBox.Show($"result: {result}");
             if (result >= 0)
                 MessageBox.Show("Success");
             else

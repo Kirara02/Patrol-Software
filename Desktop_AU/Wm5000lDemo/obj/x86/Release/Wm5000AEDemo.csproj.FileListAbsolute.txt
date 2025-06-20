@@ -1,6 +1,3 @@
-C:\Patrol-Software\Desktop_AU\Wm5000lDemo\bin\x86\Release\Wm5000AEDemo.exe.config
-C:\Patrol-Software\Desktop_AU\Wm5000lDemo\bin\x86\Release\Wm5000AEDemo.exe
-C:\Patrol-Software\Desktop_AU\Wm5000lDemo\bin\x86\Release\Wm5000AEDemo.pdb
 C:\Patrol-Software\Desktop_AU\Wm5000lDemo\obj\x86\Release\Wm5000AEDemo.csproj.AssemblyReference.cache
 C:\Patrol-Software\Desktop_AU\Wm5000lDemo\obj\x86\Release\Interop.WMWEBUSBLib.dll
 C:\Patrol-Software\Desktop_AU\Wm5000lDemo\obj\x86\Release\Wm5000AEDemo.csproj.ResolveComReference.cache
@@ -8,9 +5,6 @@ C:\Patrol-Software\Desktop_AU\Wm5000lDemo\obj\x86\Release\Wm5000AEDemo.frmMain.r
 C:\Patrol-Software\Desktop_AU\Wm5000lDemo\obj\x86\Release\Wm5000AEDemo.Properties.Resources.resources
 C:\Patrol-Software\Desktop_AU\Wm5000lDemo\obj\x86\Release\Wm5000AEDemo.csproj.GenerateResource.cache
 C:\Patrol-Software\Desktop_AU\Wm5000lDemo\obj\x86\Release\Wm5000AEDemo.csproj.CoreCompileInputs.cache
-C:\Patrol-Software\Desktop_AU\Wm5000lDemo\obj\x86\Release\Wm5000AEDemo.exe
-C:\Patrol-Software\Desktop_AU\Wm5000lDemo\obj\x86\Release\Wm5000AEDemo.pdb
-C:\Patrol-Software\Desktop_AU\Wm5000lDemo\obj\x86\Release\Wm5000AEDemo.exe.config
 C:\Patrol-Software\Desktop_AU\Wm5000lDemo\bin\x86\Release\dotenv.net.dll
 C:\Patrol-Software\Desktop_AU\Wm5000lDemo\bin\x86\Release\System.Buffers.dll
 C:\Patrol-Software\Desktop_AU\Wm5000lDemo\bin\x86\Release\System.Memory.dll
@@ -23,3 +17,9 @@ C:\Patrol-Software\Desktop_AU\Wm5000lDemo\bin\x86\Release\System.Runtime.Compile
 C:\Patrol-Software\Desktop_AU\Wm5000lDemo\obj\x86\Release\Wm5000AE.DFFC06E3.Up2Date
 C:\Patrol-Software\Desktop_AU\Wm5000lDemo\bin\x86\Release\.env
 C:\Patrol-Software\Desktop_AU\Wm5000lDemo\obj\x86\Release\Wm5000AEDemo.SyncForm.resources
+C:\Patrol-Software\Desktop_AU\Wm5000lDemo\bin\x86\Release\Wm5000TUniGuard.exe.config
+C:\Patrol-Software\Desktop_AU\Wm5000lDemo\bin\x86\Release\Wm5000TUniGuard.exe
+C:\Patrol-Software\Desktop_AU\Wm5000lDemo\bin\x86\Release\Wm5000TUniGuard.pdb
+C:\Patrol-Software\Desktop_AU\Wm5000lDemo\obj\x86\Release\Wm5000TUniGuard.exe
+C:\Patrol-Software\Desktop_AU\Wm5000lDemo\obj\x86\Release\Wm5000TUniGuard.pdb
+C:\Patrol-Software\Desktop_AU\Wm5000lDemo\obj\x86\Release\Wm5000TUniGuard.exe.config

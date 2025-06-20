@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SyncForm));
             this.listMessage = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -37,6 +39,7 @@
             this.lbInterval = new System.Windows.Forms.Label();
             this.lbDtype = new System.Windows.Forms.Label();
             this.lbRtype = new System.Windows.Forms.Label();
+            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.SuspendLayout();
             // 
             // listMessage
@@ -123,6 +126,12 @@
             this.lbRtype.TabIndex = 8;
             this.lbRtype.Text = "lbLog";
             // 
+            // notifyIcon1
+            // 
+            this.notifyIcon1.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon1.Icon")));
+            this.notifyIcon1.Text = "Wm5000T";
+            this.notifyIcon1.Visible = true;
+            // 
             // SyncForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -138,7 +147,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.listMessage);
             this.Name = "SyncForm";
-            this.Text = "5000A,E Demo";
+            this.Text = "Wm5000T UniGuard";
             this.Load += new System.EventHandler(this.SycnForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -156,5 +165,6 @@
         private System.Windows.Forms.Label lbInterval;
         private System.Windows.Forms.Label lbDtype;
         private System.Windows.Forms.Label lbRtype;
+        private System.Windows.Forms.NotifyIcon notifyIcon1;
     }
 }

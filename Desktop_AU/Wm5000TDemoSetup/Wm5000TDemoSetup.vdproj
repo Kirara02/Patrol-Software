@@ -22,7 +22,13 @@
         "Entry"
         {
         "MsmKey" = "8:_0727F03C50650853DDFCFA510EC4A43D"
-        "OwnerKey" = "8:_CA980DBCC95F4BC59EFC1C48F405DA05"
+        "OwnerKey" = "8:_0BEBE550B1084EF19EAFAE2BBA9E4E37"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_0BEBE550B1084EF19EAFAE2BBA9E4E37"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -34,7 +40,7 @@
         "Entry"
         {
         "MsmKey" = "8:_39F44F272E106363784F7107831A7B14"
-        "OwnerKey" = "8:_CA980DBCC95F4BC59EFC1C48F405DA05"
+        "OwnerKey" = "8:_0BEBE550B1084EF19EAFAE2BBA9E4E37"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -46,19 +52,13 @@
         "Entry"
         {
         "MsmKey" = "8:_4071BBB75E775EBFAABAFDC205A0D3F1"
-        "OwnerKey" = "8:_CA980DBCC95F4BC59EFC1C48F405DA05"
+        "OwnerKey" = "8:_0BEBE550B1084EF19EAFAE2BBA9E4E37"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_455B08CA8DA7D51C7AD7752C3C4EAC9F"
-        "OwnerKey" = "8:_CA980DBCC95F4BC59EFC1C48F405DA05"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_47B3CF9541AC43B395EEE81F0F4CC1EF"
-        "OwnerKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_0BEBE550B1084EF19EAFAE2BBA9E4E37"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -70,7 +70,7 @@
         "Entry"
         {
         "MsmKey" = "8:_4C7D14410B97025FE3FCA057C878D9F0"
-        "OwnerKey" = "8:_CA980DBCC95F4BC59EFC1C48F405DA05"
+        "OwnerKey" = "8:_0BEBE550B1084EF19EAFAE2BBA9E4E37"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -105,12 +105,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_CA980DBCC95F4BC59EFC1C48F405DA05"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_FA07A1755C070AC23BC0D44C98A374AD"
         "OwnerKey" = "8:_455B08CA8DA7D51C7AD7752C3C4EAC9F"
         "MsmSig" = "8:_UNDEFINED"
@@ -118,7 +112,13 @@
         "Entry"
         {
         "MsmKey" = "8:_FA07A1755C070AC23BC0D44C98A374AD"
-        "OwnerKey" = "8:_CA980DBCC95F4BC59EFC1C48F405DA05"
+        "OwnerKey" = "8:_0BEBE550B1084EF19EAFAE2BBA9E4E37"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_FC82CCA763C64848A49A5E414467AC36"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -136,7 +136,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_CA980DBCC95F4BC59EFC1C48F405DA05"
+        "OwnerKey" = "8:_0BEBE550B1084EF19EAFAE2BBA9E4E37"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -210,8 +210,16 @@
             "Enabled" = "11:TRUE"
             "PromptEnabled" = "11:TRUE"
             "PrerequisitesLocation" = "2:1"
-            "Url" = "8:"
+            "Url" = "8:C:\\Uniguard\\Wm5000T"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
             }
         }
         "Release"
@@ -398,26 +406,6 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_47B3CF9541AC43B395EEE81F0F4CC1EF"
-            {
-            "SourcePath" = "8:..\\Wm5000lDemo\\.env"
-            "TargetName" = "8:.env"
-            "Tag" = "8:"
-            "Folder" = "8:_BE88C8263A71436286D75A46ED97D6CC"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_4C7D14410B97025FE3FCA057C878D9F0"
             {
             "AssemblyRegister" = "3:1"
@@ -593,6 +581,26 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_FC82CCA763C64848A49A5E414467AC36"
+            {
+            "SourcePath" = "8:..\\Wm5000lDemo\\.env"
+            "TargetName" = "8:.env"
+            "Tag" = "8:"
+            "Folder" = "8:_BE88C8263A71436286D75A46ED97D6CC"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_FE6F7C79A7969127F42E19B5B623B78C"
             {
             "AssemblyRegister" = "3:1"
@@ -643,7 +651,7 @@
             }
             "{3C67513D-01DD-4637-8A68-80971EB9504F}:_BE88C8263A71436286D75A46ED97D6CC"
             {
-            "DefaultLocation" = "8:[ProgramFilesFolder][Manufacturer]\\[ProductName]"
+            "DefaultLocation" = "8:C:\\Uniguard\\Wm5000T"
             "Name" = "8:#1925"
             "AlwaysCreate" = "11:FALSE"
             "Condition" = "8:"
@@ -681,7 +689,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Wm5000TDemoSetup"
         "ProductCode" = "8:{CB5F4EA2-D3E7-4335-AC27-564E4A5B13E0}"
-        "PackageCode" = "8:{8A29A463-85AE-4CBD-A6C7-4588F05615EF}"
+        "PackageCode" = "8:{6D1C9091-CED1-4409-B635-9241A661202C}"
         "UpgradeCode" = "8:{49384D58-6832-41B6-BCA3-603EBB89788D}"
         "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"
@@ -801,30 +809,30 @@
         }
         "Shortcut"
         {
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_8C549CC38DD34D14A380C4899F9A15DD"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_6585AE300491455AA5681BC41C91115C"
             {
-            "Name" = "8:Wm5000TDemo"
+            "Name" = "8:Wm5000TUniguard"
             "Arguments" = "8:"
             "Description" = "8:"
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_CA980DBCC95F4BC59EFC1C48F405DA05"
-            "Folder" = "8:_8B04B76A42B74154A42BA0A773A4FB63"
+            "Target" = "8:_0BEBE550B1084EF19EAFAE2BBA9E4E37"
+            "Folder" = "8:_C0C8C3F442F441C5BB31B89D45BB0B29"
             "WorkingFolder" = "8:_BE88C8263A71436286D75A46ED97D6CC"
             "Icon" = "8:_731F3C81FCA344959EC7E90DF39BA1A7"
             "Feature" = "8:"
             }
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_F7649D0F5CEF4DFC8D3477AA5D8D9103"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_7F0AD9071AAC440EBB6F1C1BF264BDE4"
             {
-            "Name" = "8:Wm5000TDemo"
+            "Name" = "8:Wm5000TUniguard"
             "Arguments" = "8:"
             "Description" = "8:"
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_CA980DBCC95F4BC59EFC1C48F405DA05"
-            "Folder" = "8:_C0C8C3F442F441C5BB31B89D45BB0B29"
+            "Target" = "8:_0BEBE550B1084EF19EAFAE2BBA9E4E37"
+            "Folder" = "8:_8B04B76A42B74154A42BA0A773A4FB63"
             "WorkingFolder" = "8:_BE88C8263A71436286D75A46ED97D6CC"
             "Icon" = "8:_731F3C81FCA344959EC7E90DF39BA1A7"
             "Feature" = "8:"
@@ -1228,9 +1236,9 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_CA980DBCC95F4BC59EFC1C48F405DA05"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_0BEBE550B1084EF19EAFAE2BBA9E4E37"
             {
-            "SourcePath" = "8:..\\Wm5000lDemo\\obj\\x86\\Release\\Wm5000AEDemo.exe"
+            "SourcePath" = "8:..\\Wm5000lDemo\\obj\\x86\\Release\\Wm5000TUniGuard.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_BE88C8263A71436286D75A46ED97D6CC"

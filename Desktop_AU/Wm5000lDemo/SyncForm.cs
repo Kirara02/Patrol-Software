@@ -1,12 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Wm5000AEDemo
@@ -27,9 +20,76 @@ namespace Wm5000AEDemo
         private Timer countdownTimer;
         private int countdownRemaining;
 
+        private ToolStripMenuItem startScanMenuItem;
+        private ToolStripMenuItem stopScanMenuItem;
+
         public SyncForm()
         {
             InitializeComponent();
+
+            this.Resize += SyncForm_Resize;
+            this.Load += SycnForm_Load; // <- penting agar SycnForm_Load terpanggil
+            notifyIcon1.DoubleClick += NotifyIcon1_DoubleClick;
+
+            // Optional: Tambahkan context menu
+            ContextMenuStrip trayMenu = new ContextMenuStrip();
+
+            trayMenu.Items.Add("Open", null, ShowForm);
+
+            startScanMenuItem = new ToolStripMenuItem("Start Scan", null, (s, e) => StartScan());
+            stopScanMenuItem = new ToolStripMenuItem("Stop Scan", null, (s, e) => StopScan());
+
+            trayMenu.Items.Add(startScanMenuItem);
+            trayMenu.Items.Add(stopScanMenuItem);
+
+            trayMenu.Items.Add("Adjust Time", null, AdjustTime);
+            trayMenu.Items.Add("Exit", null, ExitApp);
+            notifyIcon1.ContextMenuStrip = trayMenu;
+        }
+
+        private void SyncForm_Resize(object sender, EventArgs e)
+        {
+            if (this.WindowState == FormWindowState.Minimized)
+            {
+                this.Hide();
+                notifyIcon1.BalloonTipTitle = "Wm5000TUniGuard Sync";
+                notifyIcon1.BalloonTipText = "App is running in background.";
+                notifyIcon1.ShowBalloonTip(3000);
+            }
+        }
+
+        private void NotifyIcon1_DoubleClick(object sender, EventArgs e)
+        {
+            ShowMainWindow();
+        }
+
+        private void ShowForm(object sender, EventArgs e)
+        {
+            ShowMainWindow();
+        }
+
+        private void ExitApp(object sender, EventArgs e)
+        {
+            notifyIcon1.Visible = false;
+            Application.Exit();
+        }
+
+        private void ShowMainWindow()
+        {
+            this.Show();
+            this.WindowState = FormWindowState.Normal;
+            this.BringToFront();
+        }
+
+        protected override void SetVisibleCore(bool value)
+        {
+            // Sembunyikan form saat pertama kali run
+            if (!IsHandleCreated)
+            {
+                value = false;
+                CreateHandle(); // Buat handle agar tidak crash
+            }
+            base.SetVisibleCore(value);
         }
 
         private void SycnForm_Load(object sender, EventArgs e)
@@ -50,19 +110,98 @@ namespace Wm5000AEDemo
                 loopInterval = interval * 1000;
             }
 
+            //usbCheckTimer = new Timer();
+            //usbCheckTimer.Interval = loopInterval; // e.g. 5000 ms
+            //usbCheckTimer.Tick += UsbCheckTimer_Tick;
+            //usbCheckTimer.Start();
+
+            //countdownRemaining = loopInterval / 1000;
+
+            //countdownTimer = new Timer();
+            //countdownTimer.Interval = 1000; // 1 detik
+            //countdownTimer.Tick += CountdownTimer_Tick;
+            //countdownTimer.Start();
+
+            //AddMessage("Scanning started");
+
+            //// Set state awal menu
+            //startScanMenuItem.Enabled = false; // karena scan langsung dimulai
+            //stopScanMenuItem.Enabled = true;
+
             usbCheckTimer = new Timer();
-            usbCheckTimer.Interval = loopInterval; // e.g. 5000 ms
+            usbCheckTimer.Interval = loopInterval;
             usbCheckTimer.Tick += UsbCheckTimer_Tick;
-            usbCheckTimer.Start();
+
+            countdownTimer = new Timer();
+            countdownTimer.Interval = 1000;
+            countdownTimer.Tick += CountdownTimer_Tick;
 
             countdownRemaining = loopInterval / 1000;
 
-            countdownTimer = new Timer();
-            countdownTimer.Interval = 1000; // 1 detik
-            countdownTimer.Tick += CountdownTimer_Tick;
-            countdownTimer.Start();
+            StartScan(); // <-- gunakan fungsi existing
 
-            AddMessage("Scanning started");
+        }
+
+        private void StartScan()
+        {
+            if (usbCheckTimer == null) return;
+
+            if (!usbCheckTimer.Enabled)
+            {
+                usbCheckTimer.Start();
+                countdownTimer?.Start();
+
+                startScanMenuItem.Enabled = false;
+                stopScanMenuItem.Enabled = true;
+            }
+        }
+
+        private void StopScan()
+        {
+            usbCheckTimer?.Stop();
+            countdownTimer?.Stop();
+            AddMessage("⛔ Scan stopped.");
+
+            startScanMenuItem.Enabled = true;
+            stopScanMenuItem.Enabled = false;
+        }
+
+        private void AdjustTime(object sender, EventArgs e)
+        {
+            if (opened < 0)
+            {
+                try
+                {
+                    opened = wmport.OpenUsb(2050);
+                }
+                catch (Exception ex)
+                {
+                    AddMessage($"❌ Failed to open USB: {ex.Message}");
+                    MessageBox.Show("Failed to open USB connection.");
+                    return;
+                }
+            }
+
+            if (opened >= 0)
+            {
+                DateTime now = DateTime.Now;
+                long result = wmport.SetDateTime(now.Year, now.Month, now.Day, now.Hour, now.Minute, now.Second);
+
+                if (result >= 0)
+                {
+                    AddMessage($"🕒 Time adjusted to {now:yyyy-MM-dd HH:mm:ss}");
+                    MessageBox.Show($"Device time synced to {now:yyyy-MM-dd HH:mm:ss}", "Adjust Time", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    AddMessage("❌ Failed to adjust time");
+                    MessageBox.Show("Failed to adjust time on device.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Device is not connected.", "Adjust Time", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         private void CountdownTimer_Tick(object sender, EventArgs e)
@@ -180,8 +319,8 @@ namespace Wm5000AEDemo
                             wmport.ErasureRecords();
 
                             DateTime now = DateTime.Now;
-                            AddMessage($"Syncing device time to {now:yyyy-MM-dd HH:mm:ss}");
                             wmport.SetDateTime(now.Year, now.Month, now.Day, now.Hour, now.Minute, now.Second);
+                            AddMessage($"Syncing device time to {now:yyyy-MM-dd HH:mm:ss}");
 
                             AddMessage("✅ Data saved and device synced", true);
 
@@ -229,5 +368,14 @@ namespace Wm5000AEDemo
             countdownRemaining = loopInterval / 1000;
             usbCheckTimer.Start();
         }
+
+        private void ShowState(long result)
+        {
+            if (result >= 0)
+                MessageBox.Show("Success");
+            else
+                MessageBox.Show("Failure");
+        }
+
     }
 }
